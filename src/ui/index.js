@@ -59,18 +59,18 @@ window.draw([gap * 2, gap], menubarWidth, term.height - gap * 2 - 1, 'Rooms');
 
 window.draw([gap * 2 + menubarWidth + gap * 2, gap], (term.width - menubarWidth - gap * 2) - gap * 4, term.height - gap * 2 - 1, 'Cool Room Name');
 
-setTimeout(() => {
-  console.clear();
-  process.exit();
-}, 10000);
-
 export const drawRooms = (rooms) => {
+  setTimeout(() => {
+    console.clear();
+    process.exit();
+  }, 10000);
+
   // console.log(rooms.map((x) => x.name));
 
   term.moveTo(0, gap * 2 + 2);
 
   // let y = gap * 2 + 2;
-  for (const r of rooms) {
+  for (const r of rooms.sort((a, b) => a.name.localeCompare(b.name))) {
     term.wrapColumn( { x: gap * 2 + 3, width: menubarWidth - 3 } ) ;
     term.wrap(r.name);
     term('\n\n');
