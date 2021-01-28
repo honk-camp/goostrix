@@ -1,4 +1,6 @@
 import sdk from 'matrix-js-sdk';
+import terminalKit from 'terminal-kit';
+
 import config from '../config.js';
 
 console.log(config, process.argv.slice(2));

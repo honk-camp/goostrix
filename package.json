@@ -19,7 +19,8 @@
   },
   "homepage": "https://github.com/honk-camp/goostrix#readme",
   "dependencies": {
-    "matrix-js-sdk": "^9.5.1"
+    "matrix-js-sdk": "^9.5.1",
+    "terminal-kit": "^1.45.9"
   },
   "type": "module"
 }
