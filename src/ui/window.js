@@ -40,7 +40,7 @@ export const draw = (position, width, height, color, title) => {
   for (let y = position[1] + 1; y < position[1] + height - 1; y++) {
     term.moveTo(position[0] + 1, y + 1);
     //process.stdout.write(charSet.straight.vertical);
-    process.stdout.write(charSet.straight.vertical + ' '.repeat(width - 1) + charSet.straight.vertical);
+    process.stdout.write(charSet.straight.vertical + ' '.repeat(width - 2) + charSet.straight.vertical);
 
     //term.moveTo(position[0] + 1 + width - 1, y + 1);
     //process.stdout.write(charSet.straight.vertical);
