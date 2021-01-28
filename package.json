@@ -1,0 +1,22 @@
+{
+  "name": "goostrix",
+  "version": "1.0.0",
+  "description": "An absolute honker of a Matrix client.",
+  "main": "src/index.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/honk-camp/goostrix.git"
+  },
+  "keywords": [
+    "matrix",
+    "matrix-client"
+  ],
+  "author": "honk.camp",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/honk-camp/goostrix/issues"
+  },
+  "homepage": "https://github.com/honk-camp/goostrix#readme"
+}
