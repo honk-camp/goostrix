@@ -9,4 +9,9 @@ const client = sdk.createClient({
   userId: process.argv[2]
 });
 
-console.log(client.getAccessToken());
+if (!client.getAccessToken()) {
+  console.error('Invalid access token / user ID provided');
+  process.exit(-1);
+}
+
+// client.startClient();
