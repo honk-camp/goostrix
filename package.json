@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "An absolute honker of a Matrix client.",
   "main": "src/index.js",
-  "scripts": {
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/honk-camp/goostrix.git"
@@ -18,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/honk-camp/goostrix/issues"
   },
-  "homepage": "https://github.com/honk-camp/goostrix#readme"
+  "homepage": "https://github.com/honk-camp/goostrix#readme",
+  "dependencies": {
+    "matrix-js-sdk": "^9.5.1"
+  },
+  "type": "module"
 }
