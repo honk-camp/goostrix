@@ -30,7 +30,7 @@ export const setCharSet = (name) => {
   charSet = charSets[name];
 };
 
-export const draw = (position, width, height, color, title) => {
+export const draw = (position, width, height, title) => {
   term.moveTo(position[0] + 1, position[1] + 1);
 
   const topSpacing = charSet.straight.horizontal.repeat(((width - title.length) / 2 - 1));

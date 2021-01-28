@@ -55,9 +55,9 @@ import * as window from './window.js';
 const gap = 1;
 
 const menubarWidth = 40 + 1;
-window.draw([gap * 2, gap], menubarWidth, term.height - gap * 2 - 1, [255, 255, 255], 'Rooms');
+window.draw([gap * 2, gap], menubarWidth, term.height - gap * 2 - 1, 'Rooms');
 
-window.draw([gap * 2 + menubarWidth + gap * 2, gap], (term.width - menubarWidth - gap * 2) - gap * 4, term.height - gap * 2 - 1, [255, 255, 255], 'Cool Room Name');
+window.draw([gap * 2 + menubarWidth + gap * 2, gap], (term.width - menubarWidth - gap * 2) - gap * 4, term.height - gap * 2 - 1, 'Cool Room Name');
 
 setTimeout(() => {
   console.clear();
